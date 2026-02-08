@@ -1,0 +1,132 @@
+/* Floating download button */
+#ssld-download-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 10000;
+  padding: 14px 24px;
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.2s, transform 0.2s;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+#ssld-download-btn:hover {
+  background-color: #1557b0;
+  transform: translateY(-1px);
+}
+
+#ssld-download-btn:active {
+  transform: translateY(0);
+}
+
+#ssld-download-btn:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Progress overlay */
+#ssld-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10001;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+#ssld-modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  width: 480px;
+  max-width: 90vw;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+#ssld-modal h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #1e293b;
+}
+
+#ssld-status {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: #64748b;
+  min-height: 20px;
+}
+
+#ssld-progress-bar-container {
+  width: 100%;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+#ssld-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: #1a73e8;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+#ssld-progress-text {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 0 0 20px;
+}
+
+#ssld-log {
+  max-height: 160px;
+  overflow-y: auto;
+  font-size: 12px;
+  color: #475569;
+  background: #f8fafc;
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  border: 1px solid #e2e8f0;
+}
+
+#ssld-log .ssld-error {
+  color: #dc2626;
+}
+
+#ssld-log .ssld-skip {
+  color: #d97706;
+}
+
+#ssld-log .ssld-success {
+  color: #16a34a;
+}
+
+#ssld-close-btn {
+  display: none;
+  padding: 10px 20px;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#ssld-close-btn:hover {
+  background: #1557b0;
+}

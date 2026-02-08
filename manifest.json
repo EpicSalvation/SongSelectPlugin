@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "SongSelect Lyrics Downloader",
+  "version": "1.0.0",
+  "description": "Bulk download lyrics from your SongSelect unique songs list as .txt files.",
+  "content_scripts": [
+    {
+      "matches": ["https://songselect.ccli.com/account/activity/unique-songs-used*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://songselect.ccli.com/songs/*"],
+      "js": ["lyrics-content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "host_permissions": [
+    "https://songselect.ccli.com/*"
+  ]
+}
