@@ -1,6 +1,6 @@
 # SongSelect Lyrics Downloader
 
-A Chrome extension that bulk-downloads the official lyrics `.txt` files for all songs in your [SongSelect](https://songselect.ccli.com/) "Unique Songs Used" list.
+A Chrome extension that bulk-downloads the official lyrics `.txt` files for all songs in your [SongSelect](https://songselect.ccli.com/) "Unique Songs Used" list. This is useful for people who are manually downloading lyrics for slides to be able to quickly grab any songs that have been recently used.  This isn't a way around anything. You must be logged into your CCLI account in order for anything to happen.  This just automates downloading the lyrics for the songs already counted against your annual quota.
 
 ## Features
 
